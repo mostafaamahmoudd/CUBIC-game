@@ -5,9 +5,12 @@ public class score : MonoBehaviour
 {
     public Transform player;
     public Text scoretext;
+    int score_ = 0;
 
     void Update()
     {
-        scoretext.text = player.position.z.ToString("0");
+        scoretext.text = score_.ToString();
+        ++score_;
+        //scoretext.text = player.position.z.ToString("0");
     }
 }
